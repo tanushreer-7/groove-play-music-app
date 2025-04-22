@@ -1,21 +1,21 @@
-/* file: "songs/attention.mp3",
-*/
-
+// Updated song list assuming files are in the root (same directory as HTML)
 const songs = [
     { title: "Song 1", artist: "Charlie Puth", genre: "Pop", file: "attention.mp3" },
     { title: "Song 2", artist: "Billie Eilish", genre: "R&B", file: "birdsofafeature.mp3" },
-    { title: "Song 3", artist: "Drake", genre: "Hip-Hp", file: "onedance.mp3" },
+    { title: "Song 3", artist: "Drake", genre: "Hip-Hop", file: "onedance.mp3" },
     { title: "Song 4", artist: "Lady Gaga", genre: "Rock", file: "diewithasmile.mp3"},
-    { title: "Song 5", artist: "Taylor Swift", genre: "Pop-Rock", file: "lover.mp3"}
+    { title: "Song 5", artist: "Taylor Swift", genre: "Pop-Rock", file: "lover.mp3" }
 ];
 
+// Play audio from root directory
 function playSong(songFile) {
     const audioPlayer = document.getElementById("audioPlayer");
-    audioPlayer.src = songFile;
+    audioPlayer.src = songFile; // path like "attention.mp3"
     audioPlayer.style.display = "block";
     audioPlayer.play();
 }
 
+// Search functionality
 document.getElementById("searchBox")?.addEventListener("input", function() {
     const query = this.value.toLowerCase();
     const results = songs.filter(song => 
@@ -23,7 +23,7 @@ document.getElementById("searchBox")?.addEventListener("input", function() {
         song.artist.toLowerCase().includes(query) || 
         song.genre.toLowerCase().includes(query)
     );
-    
+
     let resultHtml = "";
     if (results.length > 0) {
         results.forEach(song => {
@@ -40,11 +40,13 @@ document.getElementById("searchBox")?.addEventListener("input", function() {
     } else {
         resultHtml = "<p class='text-muted'>No results found</p>";
     }
-    
+
     document.getElementById("searchResults").innerHTML = resultHtml;
 });
+
+// DOM Ready: handle login/register forms
 document.addEventListener("DOMContentLoaded", () => {
-    // Register Functionality
+    // Register
     const registerForm = document.getElementById("registerForm");
     if (registerForm) {
         registerForm.addEventListener("submit", function (event) {
@@ -52,16 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const username = document.getElementById("username").value;
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
-            
-            // Store user in local storage
+
             localStorage.setItem("userEmail", email);
             localStorage.setItem("userPassword", password);
+
             alert("Registration Successful! You can now login.");
             window.location.href = "login.html";
         });
     }
 
-    // Login Functionality
+    // Login
     const loginForm = document.getElementById("loginForm");
     if (loginForm) {
         loginForm.addEventListener("submit", function (event) {
@@ -69,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const loginEmail = document.getElementById("loginEmail").value;
             const loginPassword = document.getElementById("loginPassword").value;
 
-            // Retrieve stored user details
             const storedEmail = localStorage.getItem("userEmail");
             const storedPassword = localStorage.getItem("userPassword");
 
@@ -82,4 +83,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
