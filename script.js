@@ -2,11 +2,11 @@
 */
 
 const songs = [
-    { title: "Song 1", artist: "Charlie Puth", genre: "Pop", file: "songs/attention.mp3" },
-    { title: "Song 2", artist: "Billie Eilish", genre: "R&B", file:"songs/birdsofafeature.mp3" },
-    { title: "Song 3", artist: "Drake", genre: "Hip-Hp", file: "songs/onedance.mp3" },
-    { title: "Song 4", artist: "Lady Gaga", genre: "Rock", file: "songs/diewithasmile.mp3"},
-    { title: "Song 5", artist: "Taylor Swift", genre: "Pop-Rock", file: "songs/lover.mp3"}
+    { title: "Song 1", artist: "Charlie Puth", genre: "Pop", file: "attention.mp3" },
+    { title: "Song 2", artist: "Billie Eilish", genre: "R&B", file: "birdsofafeature.mp3" },
+    { title: "Song 3", artist: "Drake", genre: "Hip-Hp", file: "onedance.mp3" },
+    { title: "Song 4", artist: "Lady Gaga", genre: "Rock", file: "diewithasmile.mp3"},
+    { title: "Song 5", artist: "Taylor Swift", genre: "Pop-Rock", file: "lover.mp3"}
 ];
 
 function playSong(songFile) {
