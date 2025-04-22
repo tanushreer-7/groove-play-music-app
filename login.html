@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="Groove Play" width="50"> Groove Play
+                <img src="images/logo.png" alt="Groove Play" width="50"> Groove Play
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -29,26 +29,32 @@
             </div>
         </div>
     </nav>
-    
 
+    <!-- Login Form -->
     <div class="container mt-5">
-        <h2 class="text-center">Login to Your Account:</h2>
-        <form id="loginForm">
-            <div class="mb-3">
-                <label for="loginEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="loginEmail" required>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Login to Your Account:</h2>
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </form>
+                <p class="bg-dark text-light text-center mt-4 py-2">
+                    Don't have an account? <a href="register.html" class="text-warning">Click here Register here</a>
+                </p>
             </div>
-            <div class="mb-3">
-                <label for="loginPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="loginPassword" required>
-            </div><br>
-            <center><button type="submit" class="btn btn-success">Login</button></center><br>
-            
-        </form><br>
-        <p class="bg-dark text-light text-center">Don't have an account? <a href="register.html">Click here Register here</a></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
-    <br><br><br><br><br>
 </body>
 </html>
