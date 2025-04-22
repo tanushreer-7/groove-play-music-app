@@ -21,7 +21,7 @@ Welcome to **Groove Play**, your ultimate web-based music streaming experience! 
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Framework**: Bootstrap 5
 - **Media**: Local `.mp3` audio files
-- **Icons**: Bootstrap Icons (optional)
+- **Icons**: Bootstrap Icons
 
 ---
 
