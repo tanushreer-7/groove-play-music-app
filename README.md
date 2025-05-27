@@ -31,3 +31,7 @@ Welcome to **Groove Play**, your ultimate web-based music streaming experience! 
 1. Clone the repository:
    ```bash
    git clone https://github.com/tanushreer-7/groove-play-music-app.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd groove-play-music-app
