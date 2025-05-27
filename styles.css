@@ -1,0 +1,103 @@
+body {
+    background: url('images/bgimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    
+    color: white; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #0d6efd; 
+}
+
+.navbar-brand img {
+    max-height: 40px; 
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title, .card-text {
+    color: white;
+}
+.card .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.card .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+#musicPlayerContainer {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-top: 1px solid #444;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+#musicPlayerContainer .btn-light, 
+#musicPlayerContainer .btn-outline-light {
+    border-radius: 50%; 
+}
+
+#playerAlbumArt {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#progressBar, #volumeControl {
+    cursor: pointer;
+}
+
+.form-label {
+    color: white;
+}
+.form-control {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+.form-control:focus {
+    background-color: white;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.alert-fixed {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 1050; 
+    min-width: 250px;
+}
+
+
+footer.bg-dark {
+    background-color: #212529;
+}
+
+main {
+    margin-bottom: 160px; 
+}
