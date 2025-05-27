@@ -25,6 +25,17 @@ Welcome to **Groove Play**, your ultimate web-based music streaming experience! 
 
 ---
 
+### ❗ Important Note on Asset Paths:
+
+*   **Album Art (`images/art/`):**
+    *   Ensure all the artist pictures are in the `images/art/` directory.
+    *   Ensure all the song files are in a `songs/` directory.
+    *   Ensure `bgimg.jpg` and `logo.png` are in an `images/` directory.
+    *   **To fix this locally after cloning:**
+        1.  Create an `images/` folder if it doesn't exist.
+        2.  Inside `images/`, create an `art/` folder.
+        3.  Move all album art JPEGs (e.g., `attention.jpg`, `lover.jpg`, etc.) into this `images/art/` directory.
+        4.  **Alternatively,** you can modify the `albumArtUrl` property for each song in the `songs` array in `script.js` to reflect the actual path where you've placed the images.
 
 ## 🚀 Getting Started
 
